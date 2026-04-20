@@ -8,7 +8,7 @@ import reSvg from "./reSvg.svg";
 import shadcnSvg from "./shadcn-ui.svg";
 import tailwindSvg from "./safari-pinned-tab.svg";
 import rechartSVG from "./Rechard.svg";
-import pythonSvg from "./reSvg_files/python-logo-only.png";
+import pythonSvg from "./python-logo-only.png";
 import fastapiSVG from "./FastAPI.svg";
 import postgres from "./postgresql-logo-svgrepo-com.svg";
 
