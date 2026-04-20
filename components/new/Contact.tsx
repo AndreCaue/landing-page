@@ -32,7 +32,7 @@ export default function ContactFab() {
   ];
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-18 right-8 z-50">
       <AnimatePresence>
         {isOpen && (
           <div className="mb-4 flex flex-col items-center gap-4">

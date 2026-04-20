@@ -18,14 +18,16 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(() => {
-    if (typeof window === "undefined") return "pt";
+  const [language, setLanguageState] = useState<Language>("pt");
 
+  useEffect(() => {
     const storedLang = localStorage.getItem("language") as Language | null;
-    return storedLang && (storedLang === "pt" || storedLang === "en")
-      ? storedLang
-      : "pt";
-  });
+
+    if (storedLang === "pt" || storedLang === "en") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLanguageState(storedLang);
+    }
+  }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);

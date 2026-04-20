@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLanguage } from "@/context/LanguageContext";
+import { cn } from "@/lib/utils";
 
 const tabsConfig = [
   { id: "projects", key: "tabProjects", href: "#projects" },
@@ -80,7 +81,7 @@ export const TabButton = () => {
       animate={{
         padding: isScrolled ? "1rem 0" : "0rem",
         backdropFilter: isScrolled ? "blur(16px)" : "blur(0px)",
-        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.75)" : "transparent",
+        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.75)" : "rgba(0,0,0,0)",
         borderBottom: isScrolled ? "1px solid rgba(255,255,255,0.12)" : "none",
       }}
       transition={{ duration: 0.4, ease: "easeOut" }}
@@ -135,7 +136,12 @@ export const TabButton = () => {
         })}
       </div>
 
-      <div className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2">
+      <div
+        className={cn(
+          "absolute  md:right-8 md:top-1/2 -translate-y-1/2",
+          isScrolled ? "-bottom-18" : "-top-6",
+        )}
+      >
         <LanguageSwitcher />
       </div>
     </motion.nav>
