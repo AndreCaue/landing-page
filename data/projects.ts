@@ -20,93 +20,120 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
       id: "doce-ilusao",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/LoginScreen.PNG",
-        description: "E-commerce com interface moderna e criativa com tecnologia avançada.",
+        description:
+          "E-commerce com interface moderna e criativa com tecnologia avançada.",
         title: "Doce Ilusão",
       },
       back: {
-        techs: ["Vite", "React", "TypeScript", "TailwindCSS", "Python", "FastApi", "PostgreSQL"],
+        techs: [
+          "Vite",
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Python",
+          "FastApi",
+          "PostgreSQL",
+        ],
         libs: ["Shadcn/ui", "Zustand", "Tanstack Query", "Zod"],
-        resource: "Secure Payment_Real-Time Shipping Calculation_Subscriptions_Private Videos/PDFs_AWS Storage_Responsive",
+        resource:
+          "Secure Payment_Real-Time Shipping Calculation_Subscriptions_Private Videos/PDFs_AWS Storage_Responsive",
         linkSite: "https://doceilusao.store",
         linkGit: "https://github.com/AndreCaue/magicShop",
-      }
+      },
     },
     {
       id: "dashboard",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/Doceboards.PNG",
-        description: "Ferramenta com o objetivo de metrificar dados de vendas, fluxo de transporte e estoque.",
+        description:
+          "Ferramenta com o objetivo de metrificar dados de vendas, fluxo de transporte e estoque.",
         title: "Dashboard UI",
       },
       back: {
         techs: ["Vite", "React", "TailwindCSS"],
         libs: ["Recharts", "Shadcn/ui", "Framer Motion", "Tanstack Query"],
-        resource: "Interactive charts_Real-time update_Dynamic filters_PDF/CSV Export_Responsive",
+        resource:
+          "Interactive charts_Real-time update_Dynamic filters_PDF/CSV Export_Responsive",
         linkSite: "https://doceilusao.store/examples/dashboard",
         linkGit: "https://github.com/AndreCaue/landing-page",
-      }
+      },
     },
     {
       id: "landing-page",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/landing-page.PNG",
-        description: "Landing page de alta conversão desenvolvida com Next.js e Framer Motion.",
+        description: "Landing page desenvolvida com Next.js e Framer Motion.",
         title: "Landing Page",
       },
       back: {
         techs: ["NextJS", "React", "TypeScript", "TailwindCSS"],
         libs: ["Framer Motion", "Lucide React", "Geist Font"],
-        resource: "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
+        resource:
+          "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
         linkSite: "/",
         linkGit: "https://github.com/AndreCaue/landing-page",
-      }
-    }
+      },
+    },
   ],
   en: [
     {
       id: "doce-ilusao",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/LoginScreen.PNG",
-        description: "E-commerce with a modern, creative interface and advanced tech stack.",
+        description:
+          "E-commerce with a modern, creative interface and advanced tech stack.",
         title: "Doce Ilusão",
       },
       back: {
-        techs: ["Vite", "React", "TypeScript", "TailwindCSS", "Python", "FastApi", "PostgreSQL"],
+        techs: [
+          "Vite",
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Python",
+          "FastApi",
+          "PostgreSQL",
+        ],
         libs: ["Shadcn/ui", "Zustand", "Tanstack Query", "Zod"],
-        resource: "Secure Payment_Real-Time Shipping Calculation_Subscriptions_Private Videos/PDFs_AWS Storage_Responsive",
+        resource:
+          "Secure Payment_Real-Time Shipping Calculation_Subscriptions_Private Videos/PDFs_AWS Storage_Responsive",
         linkSite: "https://doceilusao.store",
         linkGit: "https://github.com/AndreCaue/magicShop",
-      }
+      },
     },
     {
       id: "dashboard",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/Doceboards.PNG",
-        description: "Management tool aimed at tracking sales, logistics flow, and inventory.",
+        description:
+          "Management tool aimed at tracking sales, logistics flow, and inventory.",
         title: "Dashboard UI",
       },
       back: {
         techs: ["Vite", "React", "TailwindCSS"],
         libs: ["Recharts", "Shadcn/ui", "Framer Motion", "Tanstack Query"],
-        resource: "Interactive charts_Real-time update_Dynamic filters_PDF/CSV Export_Responsive",
+        resource:
+          "Interactive charts_Real-time update_Dynamic filters_PDF/CSV Export_Responsive",
         linkSite: "https://doceilusao.store/examples/dashboard",
         linkGit: "https://github.com/AndreCaue/landing-page",
-      }
+      },
     },
     {
       id: "landing-page",
       front: {
         src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/landing-page.PNG",
-        description: "High-conversion landing page built with Next.js and Framer Motion.",
+        description:
+          "High-conversion landing page built with Next.js and Framer Motion.",
         title: "Landing Page",
       },
       back: {
         techs: ["NextJS", "React", "TypeScript", "TailwindCSS"],
         libs: ["Framer Motion", "Lucide React", "Geist Font"],
-        resource: "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
+        resource:
+          "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
         linkSite: "/",
         linkGit: "https://github.com/AndreCaue/landing-page",
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
