@@ -139,7 +139,7 @@ export const TabButton = () => {
       <div
         className={cn(
           "absolute  md:right-8 md:top-1/2 -translate-y-1/2",
-          isScrolled ? "-bottom-18" : "-top-6",
+          isScrolled ? "-bottom-18 lg:bottom-0" : "-top-6",
         )}
       >
         <LanguageSwitcher />

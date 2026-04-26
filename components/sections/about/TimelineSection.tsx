@@ -12,7 +12,8 @@ const phasesConfig = [
     age: 17,
     titleKey: "phase1Title",
     descKey: "phase1Desc",
-    image: "https://i.ibb.co/TDH7gMMv/photo-4954510213964827445-y.jpg",
+    image:
+      "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/download.gif",
     alt: "Mágico realizando truque",
   },
   {

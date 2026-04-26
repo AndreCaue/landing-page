@@ -31,7 +31,7 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
           "TypeScript",
           "TailwindCSS",
           "Python",
-          "FastApi",
+          "FastAPI",
           "PostgreSQL",
         ],
         libs: ["Shadcn/ui", "Zustand", "Tanstack Query", "Zod"],
@@ -67,11 +67,43 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
       },
       back: {
         techs: ["NextJS", "React", "TypeScript", "TailwindCSS"],
-        libs: ["Framer Motion", "Lucide React", "Geist Font"],
+        libs: ["Framer Motion", "Lucide React"],
         resource:
           "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
         linkSite: "/",
         linkGit: "https://github.com/AndreCaue/landing-page",
+      },
+    },
+    {
+      id: "fdp",
+      front: {
+        src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/FDP.PNG",
+        description:
+          "Plataforma de transparência pública para visualização de votações de deputados brasileiros com dados oficiais da Câmara.",
+        title: "Fiscalização de Parlamentares",
+      },
+      back: {
+        techs: [
+          "NextJS",
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+        ],
+        libs: [
+          "Shadcn/ui",
+          "React Flow",
+          "Framer Motion",
+          "SQLAlchemy",
+          "Pandas",
+          "Httpx",
+        ],
+        resource:
+          "Vote Tracking_Political Data Visualization_Interactive Graphs_Filter by Date & Party_Deputy Profiles_Automatic Data Sync_Open Data Integration",
+        linkSite: "",
+        linkGit: "",
       },
     },
   ],
@@ -91,7 +123,7 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
           "TypeScript",
           "TailwindCSS",
           "Python",
-          "FastApi",
+          "FastAPI",
           "PostgreSQL",
         ],
         libs: ["Shadcn/ui", "Zustand", "Tanstack Query", "Zod"],
@@ -128,11 +160,43 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
       },
       back: {
         techs: ["NextJS", "React", "TypeScript", "TailwindCSS"],
-        libs: ["Framer Motion", "Lucide React", "Geist Font"],
+        libs: ["Framer Motion", "Lucide React"],
         resource:
           "SEO Optimized_Framer Motion Animations_Responsive Design_Modern UI",
         linkSite: "/",
         linkGit: "https://github.com/AndreCaue/landing-page",
+      },
+    },
+    {
+      id: "fdp",
+      front: {
+        src: "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/FDP.PNG",
+        description:
+          "Public transparency platform to visualize how Brazilian deputies vote using official open data from the Chamber of Deputies.",
+        title: "Oversight of Parliamentarians",
+      },
+      back: {
+        techs: [
+          "NextJS",
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Python",
+          "FastAPI",
+          "SQLite",
+        ],
+        libs: [
+          "Shadcn/ui",
+          "React Flow",
+          "Framer Motion",
+          "SQLAlchemy",
+          "Pandas",
+          "Httpx",
+        ],
+        resource:
+          "Vote Tracking_Political Data Visualization_Interactive Graphs_Filter by Date & Party_Deputy Profiles_Automatic Data Sync_Open Data Integration",
+        linkSite: "",
+        linkGit: "",
       },
     },
   ],

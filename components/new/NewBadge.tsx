@@ -28,7 +28,7 @@ const ICONS = {
   TailwindCSS: tailSvg,
   SQLAlchemy: null,
   PostgreSQL: postgresSvg,
-  FastApi: fast,
+  FastAPI: fast,
   Python: piton,
   github: AnimatedGitHubIcon,
 } as const;
@@ -46,7 +46,7 @@ const ICONS_CLASSES = {
   TailwindCSS: "ring-sky-500 text-blue-500",
   github: "ring-violet-700 text-purple-500",
   PostgreSQL: "ring-purple-600 text-violet-500",
-  FastApi: "ring-green-600 text-emerald-400",
+  FastAPI: "ring-green-600 text-emerald-400",
   Zod: "ring-red-300 text-red-300",
   SQLAlchemy: "ring-cyan-500 text-cyan-500",
   default: "ring-gray-400",
