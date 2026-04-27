@@ -103,7 +103,8 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
         resource:
           "Vote Tracking_Political Data Visualization_Interactive Graphs_Filter by Date & Party_Deputy Profiles_Automatic Data Sync_Open Data Integration",
         linkSite: "",
-        linkGit: "",
+        linkGit:
+          "https://github.com/AndreCaue/Fiscalizacao-de-Parlamentares-Fdp",
       },
     },
   ],
@@ -196,7 +197,8 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
         resource:
           "Vote Tracking_Political Data Visualization_Interactive Graphs_Filter by Date & Party_Deputy Profiles_Automatic Data Sync_Open Data Integration",
         linkSite: "",
-        linkGit: "",
+        linkGit:
+          "https://github.com/AndreCaue/Fiscalizacao-de-Parlamentares-Fdp",
       },
     },
   ],
