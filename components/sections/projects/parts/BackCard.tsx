@@ -102,9 +102,17 @@ export const BackCard = ({
             {"< Github />"}
           </AnimatedLink>
         )}
-        {linkSite && (
+        {linkSite === "" ? (
           <AnimatedLink
             href={linkSite}
+            target="_blank"
+            className="font-mono text-sm text-green-500 hover:text-green-500"
+          >
+            Em desenvolvimento
+          </AnimatedLink>
+        ) : (
+          <AnimatedLink
+            href={linkSite || ""}
             target="_blank"
             className="font-mono text-sm text-green-500 hover:text-green-500"
           >

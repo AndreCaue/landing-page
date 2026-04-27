@@ -38,7 +38,7 @@ export const projectsData: Record<"pt" | "en", ProjectData[]> = {
         resource:
           "Secure Payment_Real-Time Shipping Calculation_Subscriptions_Private Videos/PDFs_AWS Storage_Responsive",
         linkSite: "https://doceilusao.store",
-        linkGit: "https://github.com/AndreCaue/magicShop",
+        linkGit: "https://github.com/AndreCaue/doceilusao-public",
       },
     },
     {
