@@ -35,7 +35,7 @@ const icons: TIconList[] = [
   {
     id: 4,
     Icon: Linkedin,
-    url: "https://www.linkedin.com/in/andre-caue-b72a03287/?locale=en",
+    url: "https://www.linkedin.com/in/andrecaueg/",
     textColor: "hover:text-cyan-500",
   },
 ];
