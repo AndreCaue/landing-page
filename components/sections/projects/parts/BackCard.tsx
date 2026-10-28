@@ -1,7 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { cardVariantsRight } from "@/lib/animation";
-import { NewBadge, TBadgeType } from "@/components/new/NewBadge";
+import { NewBadge } from "@/components/new/NewBadge";
 import AnimatedLink from "@/components/new/AnimatedLink";
 
 interface ContentDescriptionProps {
@@ -19,21 +17,23 @@ const ContentDescription = ({ resource }: ContentDescriptionProps) => {
   const secondColumn = itens.slice(metade);
 
   return (
-    <div className="text-white grid grid-cols-2 justify-between">
-      <h2 className="col-span-2 text-center text-xl m-2">Key Features</h2>
+    <div className="text-white grid grid-cols-2 gap-2 justify-between my-2">
+      <h2 className="col-span-2 text-center text-base sm:text-lg font-medium mb-1">
+        Key Features
+      </h2>
 
-      <div className="space-y-1">
+      <div className="space-y-1 text-xs">
         {firstColumn.map((resource, index) => (
-          <span key={index} className="block">
-            {resource} ✓
+          <span key={index} className="block text-gray-300">
+            ✓ {resource}
           </span>
         ))}
       </div>
 
-      <div className="space-y-1">
+      <div className="space-y-1 text-xs">
         {secondColumn.map((resource, index) => (
-          <span key={index} className="block">
-            {resource} ✓
+          <span key={index} className="block text-gray-300">
+            ✓ {resource}
           </span>
         ))}
       </div>
@@ -59,45 +59,45 @@ export const BackCard = ({
   linkSite,
 }: TBackCard) => {
   return (
-    <motion.div
-      variants={cardVariantsRight}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.5 }}
-      className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-white/20 transition backdrop-blur-sm"
-    >
-      <h3 className="text-xl font-medium text-white text-center underline">
-        Technology
-      </h3>
-      <div className="flex flex-wrap justify-center gap-4 my-4">
-        {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          techs.map((item: any) => (
-            <NewBadge type={item} key={item} className="" />
-          ))
-        }
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-white/20 transition backdrop-blur-sm h-full flex flex-col justify-between overflow-y-auto">
+      <div className="space-y-3">
+        <div>
+          <h3 className="text-base sm:text-lg font-medium text-white text-center underline">
+            Technology
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2 my-2">
+            {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              techs.map((item: any) => (
+                <NewBadge type={item} key={item} />
+              ))
+            }
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-base sm:text-lg font-medium text-white text-center underline">
+            Libraries
+          </h3>
+          <div className="flex flex-wrap gap-2 my-2 justify-center">
+            {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              libs.map((item: any, idx) => (
+                <NewBadge type={item} key={idx} />
+              ))
+            }
+          </div>
+        </div>
+
+        <ContentDescription resource={resource} />
       </div>
 
-      <h3 className="text-xl font-medium text-white text-center underline">
-        Libraries
-      </h3>
-
-      <div className="flex flex-wrap gap-4 my-4 justify-center">
-        {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          libs.map((item: any, idx) => (
-            <NewBadge type={item} key={idx} />
-          ))
-        }
-      </div>
-      <ContentDescription resource={resource} />
-
-      <div className="flex justify-between my-2.5">
+      <div className="flex justify-between items-center my-1 pt-3 border-t border-white/10">
         {linkGit && (
           <AnimatedLink
             href={linkGit}
             target="_blank"
-            className="font-mono text-sm"
+            className="font-mono text-xs sm:text-sm"
           >
             {"< Github />"}
           </AnimatedLink>
@@ -106,7 +106,7 @@ export const BackCard = ({
           <AnimatedLink
             href={linkSite}
             target="_blank"
-            className="font-mono text-sm text-green-500 hover:text-green-500"
+            className="font-mono text-xs sm:text-sm text-green-500 hover:text-green-500"
           >
             Em desenvolvimento
           </AnimatedLink>
@@ -114,12 +114,12 @@ export const BackCard = ({
           <AnimatedLink
             href={linkSite || ""}
             target="_blank"
-            className="font-mono text-sm text-green-500 hover:text-green-500"
+            className="font-mono text-xs sm:text-sm text-green-500 hover:text-green-500"
           >
             Visitar Site
           </AnimatedLink>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 };

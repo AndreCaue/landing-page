@@ -24,9 +24,9 @@ export default function Home() {
           variants={sectionVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           id="projects"
-          className="px-6 py-28 max-w-6xl mx-auto"
+          className="px-6 py-20 md:py-28 max-w-6xl mx-auto"
         >
           <Project />
         </motion.section>

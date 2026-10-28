@@ -4,6 +4,8 @@ import { FrontCard } from "./parts/FrontCard";
 import { BackCard } from "./parts/BackCard";
 import { projectsData } from "@/data/projects";
 import { useLanguage } from "@/context/LanguageContext";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animation";
 
 export default function Project() {
   const { language } = useLanguage();
@@ -12,10 +14,14 @@ export default function Project() {
     <>
       <Header />
 
-      <div className="grid md:grid-cols-2 gap-x-5 gap-y-28 lg:gap-x-12  lg:gap-y-12 font-mono text-sm mt-12">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 font-mono text-sm mt-12">
         {currentProjects.map((project, index) => (
-          <div
+          <motion.div
             key={project.id}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
             className={
               currentProjects.length % 2 !== 0 &&
               index === currentProjects.length - 1
@@ -41,7 +47,7 @@ export default function Project() {
                 />
               }
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

@@ -17,7 +17,6 @@ export default function AnimatedLink({
   target = "_blank",
 }: AnimatedLinkProps) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log(children, "teste");
   const letters = children.split("");
 
   return (
@@ -26,6 +25,7 @@ export default function AnimatedLink({
       target={target}
       rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={`inline-block font-medium text-blue-500 hover:text-blue-600 transition-colors ${className}`}
+      onClick={(e) => e.stopPropagation()}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       whileTap={{ scale: 0.95 }}
