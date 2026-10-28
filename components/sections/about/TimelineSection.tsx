@@ -20,7 +20,8 @@ const phasesConfig = [
     age: 19,
     titleKey: "phase2Title",
     descKey: "phase2Desc",
-    image: "https://i.ibb.co/spsbsr7W/photo-4952258414151142215-y.jpg",
+    image:
+      "https://doce-ilusao-public-dev.s3.sa-east-1.amazonaws.com/landing/WhatsApp+Image+2026-10-27+at+22.12.58.jpeg",
     alt: "Pessoa organizando estoque",
   },
   {
